@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { Icon } from 'react-native-elements'
+//import { ReactMic } from 'react-mic';
+
+import { Icon } from 'react-native-elements';
+
 
 export default class App extends React.Component {
   render() {
@@ -32,6 +35,7 @@ export default class App extends React.Component {
     );
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
