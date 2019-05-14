@@ -6,7 +6,7 @@ import MicrophoneOn                from 'material-ui/svg-icons/av/mic';
 import MicrophoneOff               from 'material-ui/svg-icons/av/stop';
 import PauseIcon                   from 'material-ui/svg-icons/av/pause';
 
-import { ReactMic }                from '../../src';
+import { ReactMic }                from './src/component/ReactMic';
 import sampleAudio                 from './sample_audio.webm';
 import ReactGA                     from 'react-ga';
 
