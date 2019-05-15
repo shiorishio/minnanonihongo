@@ -1,35 +1,8 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { ReactMic } from './src/components/ReactMic';
-import { AudioCtx } from './src/libs/AudioContext';
-
-//import { Icon } from 'react-native-elements';
-
+import { Icon } from 'react-native-elements';
 export default class App extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      record: false
-    }  
-  }
-
-  startRecording = () => {
-    this.setState({
-      record: true
-
-    });
-  }
-
-  stopRecording = () => {
-    this.setState({
-      record: false
-    });
-  }
-
-  onData(recordedBlob) {
-    console.log('chunk of real-time date is: ' , recordedBlob);
-  }
   render() {
     return (
      <View style={styles.container}>
@@ -46,6 +19,11 @@ export default class App extends React.Component {
         <Text></Text>
         <Text></Text>
         <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
 
       <Icon
           name="microphone"
@@ -53,19 +31,7 @@ export default class App extends React.Component {
           size ="80"
           justifyContent= 'flex'
       />
-          
     </View>
-     //<div>
-     //<ReactMic
-       //record={this.state.record}
-       ////className="sound-wave"
-       //onStop={this.onStop}
-       //onData={this.onData}
-       //strokeColor="#000000"
-       //backgroundColor="#FF4081" />
-     //<button onTouchTap={this.startRecording} type="button">Start</button>
-     //<button onTouchTap={this.stopRecording} type="button">Stop</button>
-   //</div> 
     );
   }
 }
